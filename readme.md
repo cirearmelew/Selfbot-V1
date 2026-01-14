@@ -72,7 +72,8 @@ The token is the key for the bot to connect to Discord. Never share your token w
 Open your browser and log in to your Discord account.
 Press F12 (or Ctrl + Shift + I) to open Developer Tools.
 Switch to the Console tab.
-Paste the following code into the Console:JavaScript(webpackChunkdiscord_app.push([
+Paste the following code into the Console:
+```(webpackChunkdiscord_app.push([
     [""],
     {},
     (e) => {
@@ -81,7 +82,7 @@ Paste the following code into the Console:JavaScript(webpackChunkdiscord_app.pus
 ]),
 m)
     .find((e) => e?.exports?.default?.getToken !== void 0)
-    .exports.default.getToken();
+    .exports.default.getToken();```
 If you see a "allow pasting" warning (in yellow), type allow pasting into the Console.
 If the token doesn't appear, paste the code from step 4 again.
 The token will display as a red string in single quotes ('...') or double quotes ("...").
